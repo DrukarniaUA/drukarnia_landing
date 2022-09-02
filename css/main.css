@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;500;700;800&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4FBFB;
+  overflow-x: hidden;
+}
+
+header {
+  margin: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+main {
+  padding: 74px 20px 0;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+}
+
+h1 {
+  font-family: "Alumni Sans", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.header {
+  font-family: "Alumni Sans", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 72px;
+  text-align: center;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+section:first-of-type {
+  text-align: center;
+  margin: 0 50px;
+}
+section:first-of-type div {
+  margin: 8px;
+}
+section:first-of-type div h1 {
+  margin-top: 0;
+}
+section:first-of-type div p {
+  text-align: center;
+  margin-bottom: 105px;
+}
+
+.second-screen {
+  margin-top: 210px;
+  text-align: center;
+}
+.second-screen p {
+  margin: 50px 22px;
+}
+.second-screen div:first-of-type .second-screen__mobile {
+  display: block;
+  margin: 0 auto;
+}
+.second-screen div:last-of-type img {
+  width: 100%;
+}
+
+.third-screen {
+  margin: 85px auto;
+}
+.third-screen div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 30px;
+}
+.third-screen div div {
+  position: relative;
+  margin: 15px 0;
+}
+.third-screen div div .header {
+  font-family: "Alumni Sans", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 60px;
+}
+.third-screen div div img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.third-screen div span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  margin: 12.5px 0;
+}
+
+.forth-screen p {
+  position: absolute;
+  top: 67%;
+  left: 15%;
+  min-width: 350px;
+  text-align: center;
+  padding: 60px 40px;
+  background-image: url("/img/mobile/background/Group 34.png");
+}
+
+.fifth-screen p {
+  margin: 0 0 0 20px;
+  text-align: left;
+}
+.fifth-screen div:nth-of-type(3) p, .fifth-screen div:nth-of-type(4) p, .fifth-screen div:nth-of-type(6) p {
+  margin: 0;
+}
+.fifth-screen div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.fifth-screen__right {
+  flex-direction: row-reverse;
+}
+.fifth-screen__right p {
+  margin: 0 20px 0 0;
+}
+.fifth-screen .baza {
+  font-size: 75px;
+  margin-top: 85px;
+  margin-bottom: 110px;
+  padding-bottom: 30px;
+  background-image: url("/img/mobile/background/Group 40.png");
+  background-repeat: no-repeat;
+}
+
+#klava {
+  transform: translateX(-350px);
+}
+
+.sixth-screen {
+  margin-top: 70px;
+}
+.sixth-screen p {
+  margin: 0;
+}
+.sixth-screen img {
+  margin-left: -20px;
+  margin-top: -30px;
+}
+.sixth-screen h1 {
+  font-size: 64px;
+  background: #FFFFFF;
+  border: 1px solid #212B36;
+  box-shadow: 0 4px 0 2px #000000;
+  border-radius: 19px;
+}
+
+.fon {
+  position: absolute;
+  user-select: none;
+  z-index: -1000;
+}
+.fon.fon1 {
+  top: -18%;
+  left: -17%;
+}
+.fon.fon2 {
+  top: -11%;
+  left: 102%;
+}
+.fon.fon3 {
+  top: 11.8%;
+  left: 88%;
+}
+.fon.fon4 {
+  top: 44%;
+  left: 113%;
+}
+.fon.fon5 {
+  top: 109%;
+  left: 59%;
+}
+.fon.fon6 {
+  top: 23%;
+  left: -19%;
+}
+.fon.fon7 {
+  top: 103%;
+  left: -95px;
+}
+.fon.fon8 {
+  top: 65%;
+  left: -68%;
+  width: 500px;
+}
+.fon.fon9 {
+  top: 1%;
+  left: 91%;
+}
+.fon.fon10 {
+  top: 15%;
+  left: 84%;
+}
+.fon.fon11 {
+  top: 30%;
+  left: 67%;
+}
+.fon.fon12 {
+  top: 10%;
+  left: -10%;
+}
+.fon.fon13 {
+  top: -12%;
+  left: 53%;
+}
+.fon.fon14 {
+  top: 60.5%;
+  left: 70%;
+}
+.fon.fon15 {
+  top: 105.5%;
+  left: 86%;
+}
+.fon.fon16 {
+  top: -8.5%;
+  left: -10%;
+}
+.fon.fon17 {
+  top: -4.5%;
+  left: 11%;
+}
+.fon.fon18 {
+  top: 30.5%;
+  left: 92%;
+}
+.fon.fon19 {
+  top: 111.5%;
+  left: 8%;
+}
+.fon.fon20 {
+  top: 23.5%;
+  left: 2%;
+}
+.fon.fon21 {
+  top: -4%;
+  left: -6%;
+}
+.fon.fon22 {
+  top: 13.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fon.fon23 {
+  top: 33%;
+  left: -8%;
+}
+.fon.fon24 {
+  top: 48%;
+  left: 31%;
+}
+.fon.fon25 {
+  top: 62%;
+  left: -6%;
+}
+.fon.fon26 {
+  top: 71%;
+  left: 32%;
+}
+.fon.fon27 {
+  top: 89%;
+  left: -6%;
+}
+.fon.fon28 {
+  top: 101%;
+  left: 57%;
+}
+
+.text_muted {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=main.css.map */
