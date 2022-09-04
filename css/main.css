@@ -49,6 +49,25 @@ body {
   width: 20px;
 }
 
+.faq {
+  display: flex;
+  margin: 15px auto;
+}
+.faq img {
+  margin-right: 10px;
+}
+.faq p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.faq p:last-child {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: left;
+}
+
 .accordion-item {
   background: #ffffff;
   border-left: rgb(0, 0, 0) 1px solid;
@@ -343,7 +362,7 @@ section:first-of-type div p {
   margin: 0 auto 30px;
 }
 .eight-screen p, .ninth-screen p {
-  max-width: 75%;
+  max-width: 80%;
 }
 .eight-screen h1, .ninth-screen h1 {
   background: #FFFFFF;
@@ -356,7 +375,7 @@ section:first-of-type div p {
 }
 
 .ninth-screen p {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   margin-right: 0;
   text-align: left;
 }
@@ -371,6 +390,17 @@ section:first-of-type div p {
   line-height: 50px;
   margin: auto;
   max-width: 70%;
+}
+.tenth-screen div:last-child {
+  text-align: center;
+}
+.tenth-screen div:last-child a {
+  margin: 20px auto 0;
+}
+.tenth-screen div:last-child span {
+  display: block;
+  margin: auto;
+  max-width: 220px;
 }
 
 .fon {
@@ -519,28 +549,30 @@ section:first-of-type div p {
   top: 732px;
 }
 .fon.fon35 {
-  left: -1%;
-  top: 215px;
+  left: -5%;
+  top: 225px;
 }
 .fon.fon36 {
-  left: -1%;
-  top: 335px;
+  left: -6%;
+  top: 415px;
+  width: 60px;
 }
 .fon.fon37 {
   left: -1%;
-  top: 450px;
+  top: 505px;
+  width: 45px;
 }
 .fon.fon38 {
   left: -6%;
-  top: 587px;
+  top: 640px;
 }
 .fon.fon39 {
   left: 50%;
-  top: 587px;
+  top: 640px;
 }
 .fon.fon40 {
   left: 97%;
-  top: 615px;
+  top: 655px;
 }
 
 .text_muted {

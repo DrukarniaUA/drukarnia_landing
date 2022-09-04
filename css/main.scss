@@ -81,6 +81,28 @@ body {
   }
 }
 
+.faq {
+  display: flex;
+  margin: 15px auto;
+
+  img {
+    margin-right: 10px;
+  }
+
+  p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  p:last-child {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: left;
+  }
+}
+
 .accordion-item {
   background: #ffffff;
   border-left: rgb(0, 0, 0) 1px solid;
@@ -396,7 +418,7 @@ section:first-of-type {
   }
 
   p {
-    max-width: 75%;
+    max-width: 80%;
   }
 
   h1 {
@@ -412,7 +434,7 @@ section:first-of-type {
 
 .ninth-screen {
   p {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     margin-right: 0;
     text-align: left;
   }
@@ -429,6 +451,20 @@ section:first-of-type {
     line-height: 50px;
     margin: auto;
     max-width: 70%;
+  }
+
+  div:last-child {
+    text-align: center;
+
+    a {
+      margin: 20px auto 0;
+    }
+
+    span {
+      display: block;
+      margin: auto;
+      max-width: 220px;
+    }
   }
 }
 
@@ -612,33 +648,35 @@ section:first-of-type {
   }
 
   &.fon35 {
-    left: -1%;
-    top: 215px;
+    left: -5%;
+    top: 225px;
   }
 
   &.fon36 {
-    left: -1%;
-    top: 335px;
+    left: -6%;
+    top: 415px;
+    width: 60px;
   }
 
   &.fon37 {
     left: -1%;
-    top: 450px;
+    top: 505px;
+    width: 45px;
   }
 
   &.fon38 {
     left: -6%;
-    top: 587px;
+    top: 640px;
   }
 
   &.fon39 {
     left: 50%;
-    top: 587px;
+    top: 640px;
   }
 
   &.fon40 {
     left: 97%;
-    top: 615px;
+    top: 655px;
   }
 }
 
