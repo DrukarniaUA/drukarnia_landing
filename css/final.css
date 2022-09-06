@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Nunito+Sans:wght@800&family=Roboto+Slab:wght@300;500;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  display: flex;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+  height: 60px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 390px;
+}
+
+.text_muted {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 72px;
+  text-align: center;
+}
+
+p, span {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background-color: #F4FBFB;
+  overflow-x: hidden;
+}
+
+.welcome {
+  background: url("/img/mobile/background/Number.svg"), url("/img/mobile/background/Vector 7.svg"), url("/img/mobile/background/Group 24.svg"), url("/img/mobile/background/Group 55.svg"), url("/img/mobile/background/star.svg"), url("/img/mobile/background/Vector 49.svg");
+  background-position: 94% 20px, 91% 138px, 10% -2%, 5% 35%, 90% 45%, 100% 90%;
+  background-repeat: no-repeat;
+  background-size: 14%, auto, auto, 14%, auto, auto;
+  padding: 75px 20px;
+  position: relative;
+}
+.welcome__text {
+  margin: 10px auto 100px;
+  text-align: center;
+  width: max(220px, 30%);
+}
+.welcome__bot {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 300px;
+}
+.welcome__bot img {
+  width: 200px;
+}
+
+.preview > div {
+  display: flex;
+  flex-direction: column;
+}
+.preview__phone {
+  background: url("/img/mobile/background/Group 25.svg"), url("/img/mobile/background/Group 58.svg");
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  padding: 170px 0 0;
+}
+.preview__phone p {
+  margin: 50px auto 0;
+  text-align: center;
+  width: max(52%, 260px);
+}
+.preview__phone img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+.preview__laptop {
+  background: url("/img/mobile/background/Group 29.svg") no-repeat left 10%;
+  padding-top: 50px;
+}
+.preview__laptop img {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+}
+.preview__laptop p {
+  margin: 50px auto 0;
+  text-align: center;
+  width: max(60%, 300px);
+}
+
+.comparison {
+  background: url("/img/mobile/background/Group 61-2.svg") no-repeat right 4%, url("/img/mobile/background/Group 62.svg") no-repeat -7% 13%;
+  padding-top: 100px;
+}
+.comparison > div {
+  align-items: center;
+  background: url("/img/mobile/background/Group 31.svg") no-repeat center 138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+.comparison h1 {
+  font-size: 64px;
+  line-height: 55px;
+  margin: 20px 0 56px;
+  text-align: left;
+  width: min-content;
+}
+.comparison span {
+  margin-bottom: 26.5px;
+}
+
+.faq {
+  display: flex;
+  margin: 15px auto;
+}
+.faq img {
+  margin-right: 10px;
+}
+.faq p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.faq p:last-child {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.accordion-header {
+  background: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.accordion-header img {
+  width: 20px;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border-left: rgb(0, 0, 0) 1px solid;
+  border-right: rgb(0, 0, 0) 1px solid;
+  border-top: rgb(0, 0, 0) 1px solid;
+}
+.accordion-item:last-of-type {
+  border-bottom: rgb(0, 0, 0) 1px solid;
+}
+.accordion-item .accordion-title {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+}
+.accordion-item .accordion-title img {
+  float: right;
+  height: 8px;
+  transition: all 0.2s ease;
+}
+.accordion-item .accordion-title p {
+  font-weight: 500;
+}
+.accordion-item .accordion-content {
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in;
+}
+.accordion-item .accordion-content ol, .accordion-item .accordion-content ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.accordion-item .accordion-content ol li, .accordion-item .accordion-content ul li {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+}
+.accordion-item .accordion-content div:last-child {
+  background: rgba(255, 194, 210, 0.5);
+  border-left: grey solid 1px;
+}
+.accordion-item .accordion-content div:first-child {
+  background: rgba(210, 255, 216, 0.51);
+  border-right: grey solid 1px;
+}
+.accordion-item .accordion-content p {
+  text-align: left;
+}
+.accordion-item .accordion-content div {
+  padding: 7px;
+  width: 50%;
+  word-break: break-word;
+}
+
+.fon {
+  position: absolute;
+  user-select: none;
+  z-index: -1000;
+}
+.fon.fon1 {
+  left: 40%;
+  top: 60%;
+  transform: translateX(-50%);
+  width: 500px;
+}
+
+@media only screen and (min-width: 1440px) {
+  h1 {
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 100;
+    font-size: 196px;
+    line-height: 140px;
+    text-align: center;
+  }
+  p, span {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: "Roboto Slab", serif;
+  }
+  .text_muted {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  main {
+    max-width: 1920px;
+    padding: 0;
+  }
+  .welcome {
+    background: url("/img/mobile/background/Number.svg"), url("/img/desktop/background/Group 56.svg"), url("/img/desktop/background/Group 57.svg");
+    background-position: 94% 284px, 0 -30px, right 85%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 85px 20px;
+  }
+  .welcome div:first-child {
+    background: url("/img/desktop/background/Vector 7.svg"), url("/img/desktop/background/Vector 49(1).svg");
+    background-position: 75.5% 127px, 44% 373px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-bottom: 110px;
+    width: 1440px;
+  }
+  .welcome__bot {
+    max-width: 350px;
+  }
+  .welcome__bot img {
+    width: 300px;
+  }
+  .preview > div {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1440px;
+  }
+  .preview__phone {
+    background: url("/img/desktop/background/Group 59.svg") no-repeat left top;
+    flex: 1;
+    padding: 0 0 200px;
+  }
+  .preview__phone p {
+    margin: 50px 0 0 95px;
+  }
+  .preview__phone img {
+    margin: 180px 0 90px 185px;
+    width: 210px;
+  }
+  .preview__laptop {
+    background: url("/img/desktop/background/Group 60.svg") no-repeat 100% 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+  .preview__laptop img {
+    margin: 0 40px;
+    padding-top: 165px;
+    width: 560px;
+  }
+  .preview__laptop p {
+    margin: 0 0 0 100px;
+    padding-top: 140px;
+  }
+  .comparison {
+    background: url("/img/desktop/background/Group 61(5).svg") no-repeat left bottom, url("/img/desktop/background/Group 61-3.svg") no-repeat right bottom;
+    margin-bottom: 10px;
+    padding-top: 100px;
+  }
+  .comparison > div {
+    background: url("/img/desktop/background/Group 61(2).svg") no-repeat center top;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-bottom: 336px;
+    position: relative;
+  }
+  .comparison h1 {
+    font-size: 150px;
+    line-height: 105px;
+    margin: 140px 0 0 55px;
+  }
+  .comparison span {
+    font-size: 16px;
+    position: absolute;
+  }
+  .comparison span:nth-of-type(1) {
+    left: 144px;
+    top: 103px;
+  }
+  .comparison span:nth-of-type(2) {
+    left: 1233px;
+    top: 290px;
+  }
+  .comparison span:nth-of-type(3) {
+    left: 116px;
+    top: 307px;
+  }
+  .comparison span:nth-of-type(4) {
+    left: 755px;
+    top: -49px;
+  }
+  .comparison span:nth-of-type(5) {
+    left: 256px;
+    top: 552px;
+  }
+  .comparison span:nth-of-type(6) {
+    left: 1195px;
+    top: 552px;
+  }
+  .comparison span:nth-of-type(7) {
+    left: 1064px;
+    top: 6px;
+  }
+  .comparison span:nth-of-type(8) {
+    left: 394px;
+    top: 704px;
+  }
+  .comparison span:nth-of-type(9) {
+    left: 392px;
+    top: 67px;
+  }
+  .comparison span:nth-of-type(10) {
+    left: 802px;
+    top: 695px;
+  }
+}
+
+/*# sourceMappingURL=final.css.map */

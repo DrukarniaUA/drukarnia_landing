@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;500;700;800&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;300;400;800&family=Nunito+Sans:wght@800&family=Roboto+Slab:wght@300;400;600;800&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -36,19 +34,6 @@ body {
   margin: 0 auto;
 }
 
-.accordion-header {
-  background: white;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-}
-.accordion-header img {
-  width: 20px;
-}
-
 .faq {
   display: flex;
   margin: 15px auto;
@@ -66,6 +51,19 @@ body {
   font-style: italic;
   font-weight: lighter;
   text-align: left;
+}
+
+.accordion-header {
+  background: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.accordion-header img {
+  width: 20px;
 }
 
 .accordion-item {
