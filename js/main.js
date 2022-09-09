@@ -13,7 +13,7 @@ class Accordion {
       item.dataset.idx = idx.toString();
       item.firstElementChild.addEventListener("click", this.#clickHandler.bind(this))
       this.#items.push({ item, opened: !idx })
-      if (!idx) item.children[1].style["max-height"] = item.children[1].scrollHeight + 'px';
+      if (!idx) item.children[1].style["max-height"] = (item.children[1].scrollHeight + 20) + 'px';
       if (!idx) item.children[0].children[1].style.transform = "rotate(90deg)"
     })
   }
@@ -22,7 +22,7 @@ class Accordion {
     const targetIdx = event.currentTarget.parentElement.dataset.idx;
     this.#items.forEach((item, idx) => {
       if (idx == targetIdx && !item.opened) {
-        item.item.children[1].style["max-height"] = item.item.children[1].scrollHeight + 'px';
+        item.item.children[1].style["max-height"] = (item.item.children[1].scrollHeight + 20) + 'px';
         item.item.children[0].children[1].style.transform = "rotate(90deg)"
         item.opened = true
       } else {
