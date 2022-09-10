@@ -198,19 +198,16 @@ body {
   width: 100%;
 }
 .baza__point img {
-  margin-right: 5px;
+  margin: 8px;
 }
 .baza__point p {
-  margin: 0 10px;
+  margin: 0 8px;
 }
 .baza__point:first-of-type {
   margin-top: 70px;
 }
 .baza__point:nth-of-type(even) {
   flex-direction: row-reverse;
-}
-.baza__point:nth-of-type(even) img {
-  margin: 0 0 0 5px;
 }
 
 .comparison-tg {
@@ -252,7 +249,7 @@ body {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
-  max-width: 140px;
+  max-width: 155px;
   padding: 3px 4px;
   position: absolute;
   text-align: left;
