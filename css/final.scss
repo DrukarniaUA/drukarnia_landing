@@ -71,6 +71,34 @@ $nunito: 'Nunito Sans', sans-serif;
   padding: 0;
 }
 
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(75px);
+  transition: all ease-out 1s;
+
+  &.visible {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+[data-enterleft] {
+  transform: translateX(-50%);
+  transition: all ease-out 1s;
+
+  &.visible {
+    transform: translateX(0);
+  }
+}
+
+[data-enterright] {
+  transform: translateX(50%);
+  transition: all ease-out 1s;
+
+  &.visible {
+    transform: translateX(0);
+  }
+}
 
 header {
   align-items: center;
@@ -127,7 +155,7 @@ body {
 
 .welcome {
   & > div {
-    background: url("/img/mobile/background/Group 68.svg") no-repeat 0 2%, url("/img/mobile/background/Group 69.svg") no-repeat 96% 7%;
+    background: url("/img/mobile/background/Group 68.svg") no-repeat 2% 2%, url("/img/mobile/background/Group 69.svg") no-repeat 96% 7%;
     margin: 0 auto;
     max-width: 390px;
     padding: 75px 20px 0;
@@ -147,7 +175,7 @@ body {
     display: flex;
     flex-direction: column;
     left: 50%;
-    max-width: 500px;
+    max-width: 530px;
     padding: 100px 0 50px;
     position: absolute;
     top: 55%;
@@ -247,7 +275,7 @@ body {
 
   p {
     position: absolute;
-    right: 30px;
+    right: 5px;
     text-align: center;
     top: 62%;
     width: 238px;
@@ -258,9 +286,7 @@ body {
   background: url("/img/mobile/background/Group 75.svg") top left no-repeat;
 
   & > div {
-    background: url("/img/Group 39.svg"), url("/img/mobile/background/Group 751.svg");
-    background-position: center 200px, center 410px;
-    background-repeat: no-repeat;
+    background: url("/img/Group 39.svg") no-repeat center 200px;
     padding-bottom: 1px;
   }
 
@@ -270,9 +296,9 @@ body {
   }
 
   &__point {
-    align-items: center;
-    display: flex;
-    margin-bottom: 60px;
+    border-bottom: #80808099 solid 2px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
     width: 100%;
 
     img {
@@ -280,7 +306,7 @@ body {
     }
 
     p {
-      margin: 0 8px;
+      margin: 0 15px;
     }
 
     &:first-of-type {

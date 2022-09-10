@@ -5,6 +5,32 @@
   padding: 0;
 }
 
+[data-scroll] {
+  opacity: 0;
+  transform: translateY(75px);
+  transition: all ease-out 1s;
+}
+[data-scroll].visible {
+  opacity: 100%;
+  transform: translateY(0);
+}
+
+[data-enterleft] {
+  transform: translateX(-50%);
+  transition: all ease-out 1s;
+}
+[data-enterleft].visible {
+  transform: translateX(0);
+}
+
+[data-enterright] {
+  transform: translateX(50%);
+  transition: all ease-out 1s;
+}
+[data-enterright].visible {
+  transform: translateX(0);
+}
+
 header {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
@@ -69,7 +95,7 @@ body {
 }
 
 .welcome > div {
-  background: url("/img/mobile/background/Group 68.svg") no-repeat 0 2%, url("/img/mobile/background/Group 69.svg") no-repeat 96% 7%;
+  background: url("/img/mobile/background/Group 68.svg") no-repeat 2% 2%, url("/img/mobile/background/Group 69.svg") no-repeat 96% 7%;
   margin: 0 auto;
   max-width: 390px;
   padding: 75px 20px 0;
@@ -87,7 +113,7 @@ body {
   display: flex;
   flex-direction: column;
   left: 50%;
-  max-width: 500px;
+  max-width: 530px;
   padding: 100px 0 50px;
   position: absolute;
   top: 55%;
@@ -172,7 +198,7 @@ body {
 }
 .klava p {
   position: absolute;
-  right: 30px;
+  right: 5px;
   text-align: center;
   top: 62%;
   width: 238px;
@@ -182,9 +208,7 @@ body {
   background: url("/img/mobile/background/Group 75.svg") top left no-repeat;
 }
 .baza > div {
-  background: url("/img/Group 39.svg"), url("/img/mobile/background/Group 751.svg");
-  background-position: center 200px, center 410px;
-  background-repeat: no-repeat;
+  background: url("/img/Group 39.svg") no-repeat center 200px;
   padding-bottom: 1px;
 }
 .baza h1 {
@@ -192,16 +216,16 @@ body {
   padding: 70px 0;
 }
 .baza__point {
-  align-items: center;
-  display: flex;
-  margin-bottom: 60px;
+  border-bottom: rgba(128, 128, 128, 0.6) solid 2px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
   width: 100%;
 }
 .baza__point img {
   margin: 8px;
 }
 .baza__point p {
-  margin: 0 8px;
+  margin: 0 15px;
 }
 .baza__point:first-of-type {
   margin-top: 70px;
