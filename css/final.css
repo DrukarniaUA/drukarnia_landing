@@ -216,7 +216,9 @@ body {
   padding: 70px 0;
 }
 .baza__point {
+  align-items: center;
   border-bottom: rgba(128, 128, 128, 0.6) solid 2px;
+  display: flex;
   margin-bottom: 25px;
   padding-bottom: 25px;
   width: 100%;
@@ -261,7 +263,9 @@ body {
   position: relative;
 }
 .comparison-tg__img img {
-  width: 100%;
+  display: block;
+  margin: auto;
+  width: 97%;
 }
 .comparison-tg__img > span {
   font-size: 15px;
@@ -273,13 +277,13 @@ body {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
-  max-width: 155px;
+  max-width: 140px;
   padding: 3px 4px;
   position: absolute;
   text-align: left;
 }
 .comparison-tg__img span:nth-child(1) {
-  left: 0;
+  left: 5px;
   top: -25px;
 }
 .comparison-tg__img span:nth-child(2) {
@@ -289,20 +293,20 @@ body {
 .comparison-tg__img span:nth-child(3) {
   left: 280px;
   min-width: 100px;
-  top: 17px;
+  top: 15px;
 }
 .comparison-tg__img span:nth-child(4) {
   left: 225px;
-  top: 461px;
+  top: 448px;
 }
 .comparison-tg__img span:nth-child(5) {
   left: 64px;
-  top: 448px;
+  top: 434px;
 }
 
 .comparison-accordion {
   background: url("/img/Vector 191.svg") no-repeat center top, url("/img/mobile/background/Group 82.svg") no-repeat bottom left;
-  padding-bottom: 185px;
+  padding-bottom: 150px;
 }
 .comparison-accordion > div {
   max-width: 1440px;
@@ -351,6 +355,7 @@ body {
 }
 .novyny__point p {
   flex: 2;
+  margin-right: 20px;
 }
 
 .faq {
@@ -526,6 +531,9 @@ body {
     color: rgba(0, 0, 0, 0.4);
     text-align: center;
   }
+  .header--shadowed {
+    line-height: 68px;
+  }
   main {
     padding: 0;
   }
@@ -695,6 +703,7 @@ body {
     margin-top: 110px;
   }
   .baza__point {
+    border: none;
     display: flex;
     width: 50%;
   }
@@ -795,7 +804,7 @@ body {
     margin-top: 155px;
   }
   .patreon > div {
-    background: url("/img/desktop/background/Group 86.svg") no-repeat center top;
+    background: url("/img/desktop/background/Group 86.svg") no-repeat center -70px;
     margin: 0 auto;
     max-width: 1440px;
   }

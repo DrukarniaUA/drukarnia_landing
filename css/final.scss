@@ -296,7 +296,9 @@ body {
   }
 
   &__point {
+    align-items: center;
     border-bottom: #80808099 solid 2px;
+    display: flex;
     margin-bottom: 25px;
     padding-bottom: 25px;
     width: 100%;
@@ -338,7 +340,9 @@ body {
     position: relative;
 
     img {
-      width: 100%;
+      display: block;
+      margin: auto;
+      width: 97%;
     }
 
 
@@ -349,14 +353,14 @@ body {
       font-size: 11px;
       font-weight: 400;
       line-height: 13px;
-      max-width: 155px;
+      max-width: 140px;
       padding: 3px 4px;
       position: absolute;
       text-align: left;
     }
 
     span:nth-child(1) {
-      left: 0;
+      left: 5px;
       top: -25px;
     }
 
@@ -368,24 +372,24 @@ body {
     span:nth-child(3) {
       left: 280px;
       min-width: 100px;
-      top: 17px;
+      top: 15px;
     }
 
     span:nth-child(4) {
       left: 225px;
-      top: 461px;
+      top: 448px;
     }
 
     span:nth-child(5) {
       left: 64px;
-      top: 448px;
+      top: 434px;
     }
   }
 }
 
 .comparison-accordion {
   background: url("/img/Vector 191.svg") no-repeat center top, url("/img/mobile/background/Group 82.svg") no-repeat bottom left;
-  padding-bottom: 185px;
+  padding-bottom: 150px;
 
   & > div {
     max-width: 1440px;
@@ -444,6 +448,7 @@ body {
 
     p {
       flex: 2;
+      margin-right: 20px;
     }
   }
 }
@@ -623,6 +628,10 @@ body {
 
   .text_muted {
     @include text_muted_desktop;
+  }
+
+  .header--shadowed {
+    line-height: 68px;
   }
 
   main {
@@ -830,6 +839,7 @@ body {
     }
 
     &__point {
+      border: none;
       display: flex;
       width: 50%;
 
@@ -954,7 +964,7 @@ body {
     }
 
     & > div {
-      background: url("/img/desktop/background/Group 86.svg") no-repeat center top;
+      background: url("/img/desktop/background/Group 86.svg") no-repeat center -70px;
       margin: 0 auto;
       max-width: 1440px;
 
