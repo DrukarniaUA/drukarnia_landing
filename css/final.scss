@@ -433,6 +433,7 @@ body {
   &__point {
     display: flex;
     margin: 15px auto;
+    padding: 0 10px;
 
     &:first-of-type {
       margin-top: 45px;
@@ -676,7 +677,7 @@ body {
 
       p {
         margin: 0 0 0 152px;
-        padding-top: 134px;
+        padding-top: 130px;
       }
     }
   }
@@ -950,7 +951,7 @@ body {
 
     & > div {
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 900px;
     }
 
     h1 {
@@ -964,7 +965,7 @@ body {
 
       div {
         flex: 0;
-        min-width: 200px;
+        min-width: 180px;
       }
 
       p {

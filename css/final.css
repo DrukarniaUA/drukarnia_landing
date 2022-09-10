@@ -349,6 +349,7 @@ body {
 .faq__point {
   display: flex;
   margin: 15px auto;
+  padding: 0 10px;
 }
 .faq__point:first-of-type {
   margin-top: 45px;
@@ -566,7 +567,7 @@ body {
   }
   .preview__laptop p {
     margin: 0 0 0 152px;
-    padding-top: 134px;
+    padding-top: 130px;
   }
   .comparison {
     background: url("/img/desktop/background/15.svg") no-repeat 5% 80%, url("/img/desktop/background/Group 61-3.svg") no-repeat right bottom;
@@ -789,7 +790,7 @@ body {
   }
   .novyny > div {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
   }
   .novyny h1 {
     margin: 0 auto 65px;
@@ -801,7 +802,7 @@ body {
   }
   .novyny__point div {
     flex: 0;
-    min-width: 200px;
+    min-width: 180px;
   }
   .novyny__point p {
     max-width: 650px;
