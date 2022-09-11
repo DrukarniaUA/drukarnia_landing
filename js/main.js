@@ -39,7 +39,6 @@ new Accordion()
 
 function callback(entries, observer) {
   entries.forEach(entry => {
-    console.log(entry)
     if (!entry.isIntersecting) return
     entry.target.classList.add('visible')
     observer.unobserve(entry.target)
@@ -52,7 +51,6 @@ document.querySelectorAll('[data-anim]').forEach(elem => {
     threshold: 0.25
   }
 
-  console.log(elem)
   const observer = new IntersectionObserver(callback, options)
   observer.observe(elem)
 })

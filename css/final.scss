@@ -150,14 +150,14 @@ p, span {
 
 body {
   background-color: $background-color;
-  overflow-x: hidden;
 }
 
 .welcome {
   & > div {
-    background: url("/img/mobile/background/Group 68.svg") no-repeat 2% 2%, url("/img/mobile/background/Group 69.svg") no-repeat 96% 7%;
+    background: url("/img/mobile/background/Group 68.svg") no-repeat 2% 2%, url("/img/mobile/background/Group 69.svg") no-repeat 99% 7%;
     margin: 0 auto;
     max-width: 390px;
+    overflow-x: hidden;
     padding: 75px 20px 0;
     position: relative;
   }
@@ -171,23 +171,27 @@ body {
 
   &__bot {
     align-items: center;
-    background: url("/img/mobile/background/Vector 49.svg") no-repeat left 91%;
     display: flex;
     flex-direction: column;
     left: 50%;
-    max-width: 530px;
     padding: 100px 0 50px;
     position: absolute;
     top: 55%;
     transform: translateX(-50%);
-    width: 160vw;
-
-    span {
-      max-width: 300px;
-    }
 
     img {
       width: 200px;
+    }
+
+    & > img {
+      left: -71%;
+      position: absolute;
+      top: 21%;
+      width: 434px;
+    }
+
+    span {
+      max-width: 300px;
     }
   }
 }
@@ -263,22 +267,35 @@ body {
 }
 
 .klava {
-  background: url("/img/Group 73.svg");
-  background-position: -50% 120%;
-  background-repeat: no-repeat;
+  height: 470px;
   position: relative;
 
-  img {
-    transform: translate(-239px, -115px);
-    width: 600px;
-  }
+  div {
+    img {
+      left: -283px;
+      position: absolute;
+      top: -91px;
+      width: 632px;
+    }
 
-  p {
-    position: absolute;
-    right: 5px;
-    text-align: center;
-    top: 62%;
-    width: 238px;
+    div {
+      background: url("/img/Group 73.svg") -33% center no-repeat;
+      display: flex;
+      justify-content: end;
+      left: 0;
+      max-width: 390px;
+      overflow-x: hidden;
+      padding: 46px 5px;
+      position: absolute;
+      top: 48%;
+      width: 100%;
+
+      p {
+        margin-top: 30px;
+        text-align: center;
+        width: 275px;
+      }
+    }
   }
 }
 
@@ -300,6 +317,7 @@ body {
     border-bottom: #80808099 solid 2px;
     display: flex;
     margin-bottom: 25px;
+    overflow-x: hidden;
     padding-bottom: 25px;
     width: 100%;
 
@@ -370,7 +388,7 @@ body {
     }
 
     span:nth-child(3) {
-      left: 280px;
+      left: 259px;
       min-width: 100px;
       top: 15px;
     }
@@ -429,6 +447,7 @@ body {
 
 .novyny {
   background: url("/img/mobile/background/Group 85.svg") no-repeat bottom left;
+  overflow: hidden;
   padding-bottom: 60px;
 
   h1 {
@@ -650,9 +669,7 @@ body {
     padding: 85px 20px 0;
 
     div:first-child {
-      background: url("/img/desktop/background/Vector 7.svg"), url("/img/desktop/background/Vector 49(1).svg");
-      background-position: 75.5% 127px, 44% 455px;
-      background-repeat: no-repeat;
+      background: url("/img/desktop/background/Vector 7.svg") no-repeat 75.5% 127px;
       margin: 0 auto;
       max-width: none;
       padding: 0 0 250px;
@@ -671,6 +688,13 @@ body {
 
       img {
         width: 300px;
+      }
+
+      & > img {
+        left: -62%;
+        position: absolute;
+        top: 14%;
+        width: 579px;
       }
     }
   }
@@ -794,6 +818,7 @@ body {
 
   .klava {
     background: none;
+    height: 1000px;
 
     div {
       background: url("/img/desktop/background/Group 74.svg");
@@ -803,19 +828,28 @@ body {
       margin: 0 auto;
       max-width: 1440px;
       position: relative;
+
+      img {
+        left: -330px;
+        position: absolute;
+        top: -21px;
+        width: 1400px;
+      }
+
+      div {
+        background: none;
+        height: fit-content;
+        max-width: none;
+
+        p {
+          margin-top: 123px;
+          text-align: left;
+          width: 460px;
+        }
+      }
     }
 
-    img {
-      transform: translate(-385px, -115px);
-      width: 105%;
-    }
 
-    p {
-      right: 80px;
-      text-align: left;
-      top: 64%;
-      width: 366px;
-    }
   }
 
   .baza {
@@ -835,6 +869,7 @@ body {
     &__values {
       display: flex;
       flex-wrap: wrap;
+      margin-left: 5%;
       margin-top: 110px;
     }
 
