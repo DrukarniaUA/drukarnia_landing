@@ -190,31 +190,33 @@ body {
 }
 
 .klava {
-  height: 470px;
+  height: 300px;
+  margin-bottom: 150px;
   position: relative;
 }
 .klava div img {
   left: -283px;
   position: absolute;
-  top: -91px;
+  top: -171px;
   width: 632px;
 }
 .klava div div {
-  background: url("/img/Group 73.svg") -33% center no-repeat;
+  background: url("/img/Group 73.svg") -50% center no-repeat;
   display: flex;
   justify-content: end;
   left: 0;
   max-width: 390px;
   overflow-x: hidden;
-  padding: 46px 5px;
+  padding: 46px 10px;
   position: absolute;
   top: 48%;
   width: 100%;
 }
 .klava div div p {
+  margin-right: min((3vw - 10px) * 5, 20px);
   margin-top: 30px;
   text-align: center;
-  width: 275px;
+  width: min(250px, 63vw);
 }
 
 .baza {
@@ -684,6 +686,7 @@ body {
   .klava {
     background: none;
     height: 1000px;
+    margin-bottom: 50px;
   }
   .klava div {
     background: url("/img/desktop/background/Group 74.svg");
