@@ -222,6 +222,7 @@ body {
 
 .baza {
   background: url("/img/mobile/background/Group 75.svg") top left no-repeat;
+  margin-bottom: 60px;
 }
 .baza > div {
   background: url("/img/Group 39.svg") no-repeat center 200px;
@@ -445,8 +446,11 @@ body {
   justify-content: space-around;
   padding: 10px;
 }
-.accordion-header img {
+.accordion-header img:first-child {
   width: 20px;
+}
+.accordion-header img:last-child {
+  width: 30px;
 }
 
 .accordion-item {
@@ -718,6 +722,7 @@ body {
     background: url("/img/desktop/background/Group 76.svg"), url("/img/desktop/background/Group 77.svg");
     background-position: right bottom, left bottom;
     background-repeat: no-repeat;
+    margin-bottom: 0;
   }
   .baza > div {
     background: url("/img/Group 39.svg"), url("/img/mobile/background/Group 41.svg");
