@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Nunito+Sans:wght@800&family=Roboto+Slab:wght@400;500;600;800&display=swap");
 * {
   box-sizing: border-box;
@@ -129,6 +130,28 @@ body {
 }
 .welcome__bot span {
   max-width: 300px;
+}
+
+.missions > div {
+  background: url("/img/mobile/background/Group 91.svg") no-repeat, url("/img/mobile/background/рваная-бумага-на-черном- 2.png") no-repeat 0 13%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 390px;
+  overflow-x: hidden;
+  padding: 0 45px 25px;
+}
+.missions > div h1 {
+  font-size: 60px;
+  line-height: 45px;
+}
+.missions > div div {
+  padding-bottom: 23px;
+  padding-top: 77px;
+}
+.missions > div p {
+  margin: 20px 0;
+  text-align: center;
 }
 
 .preview > div {
@@ -593,6 +616,34 @@ body {
     position: absolute;
     top: 14%;
     width: 579px;
+  }
+  .missions {
+    background: url("/img/desktop/background/Group 92.svg") no-repeat top left, url("/img/desktop/background/Group 93.svg") no-repeat top right;
+  }
+  .missions > div {
+    background: url("/img/desktop/background/Group 94.svg") no-repeat center 120px;
+    max-width: 1440px;
+    padding: 100px 0;
+  }
+  .missions > div div:first-of-type {
+    padding-top: 85px;
+  }
+  .missions > div div:first-of-type h1 {
+    font-size: 96px;
+    line-height: 100px;
+    margin-bottom: 40px;
+  }
+  .missions > div div:last-of-type {
+    max-width: 400px;
+    padding-top: 125px;
+  }
+  .missions > div div:last-of-type h1 {
+    font-size: 128px;
+    line-height: 130px;
+  }
+  .missions > div div {
+    margin: 0 auto;
+    max-width: 840px;
   }
   .preview > div {
     flex-direction: row;
