@@ -457,25 +457,6 @@ body {
 
 }
 
-.patreon {
-  background: url("/img/mobile/background/Group 84.svg") no-repeat left bottom, url("/img/mobile/background/Group 48.svg") no-repeat right 140px;
-  padding-bottom: 180px;
-
-  div {
-    video {
-      display: block;
-      margin: 40px auto;
-      width: 250px;
-    }
-
-    p {
-      margin: 0 auto;
-      text-align: center;
-      width: 87%;
-    }
-  }
-}
-
 .novyny {
   background: url("/img/mobile/background/Group 85.svg") no-repeat bottom left;
   overflow: hidden;
@@ -1053,39 +1034,6 @@ body {
   }
   .accordion-title > p {
     line-height: 30px;
-  }
-
-  .patreon {
-    background: none;
-    padding-bottom: 80px;
-
-    h1 {
-      margin: 0 auto;
-      max-width: fit-content;
-      padding: 0 20px;
-    }
-
-    &__content {
-      display: flex;
-      margin-top: 155px;
-    }
-
-    & > div {
-      background: url("/img/desktop/background/Group 86.svg") no-repeat center -70px;
-      margin: 0 auto;
-      max-width: 1440px;
-
-      video {
-        display: block;
-        margin: 40px 0 40px 267px;
-      }
-
-      p {
-        margin: 254px 0 0 267px;
-        text-align: center;
-        width: 370px;
-      }
-    }
   }
 
   .novyny {
